@@ -63,3 +63,16 @@ form {
     font-size: 2em;
   }
 }
+
+#outputLb,
+#outputG,
+#outputOz  {
+  background-color: #f7f7f7;
+  border: 0;
+  outline: 0;
+  font-size: 2em;
+  max-width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  width: 35%;
+}
