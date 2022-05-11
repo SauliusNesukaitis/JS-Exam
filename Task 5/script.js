@@ -24,10 +24,10 @@ const users = [
 function filterDogOwers(users) {
   users.forEach((user) => {
     if (user.hasDog === true) {
-      console.log(user.name)
-    }
-  })
-}
+      console.log(user.name);
+    };
+  });
+};
 
 filterDogOwers(users);
 
@@ -36,10 +36,10 @@ function filterAdults(users) {
   let output = [];
   users.forEach((user) => {
     if (user.age >= 18) {
-      output.push(user.name)
-    }
-  })
+      output.push(user.name);
+    };
+  });
   console.log(output);
-}
+};
 
 filterAdults(users);
