@@ -21,10 +21,10 @@ const users = [
 ];
 
 
-function filterDogOwers(users) {
-  users.forEach((user) => {
-    if (user.hasDog === true) {
-      console.log(user.name);
+function filterDogOwers(arr) {
+  arr.forEach((obj) => {
+    if (obj.hasDog === true) {
+      console.log(obj.name);
     };
   });
 };
@@ -32,11 +32,11 @@ function filterDogOwers(users) {
 filterDogOwers(users);
 
 
-function filterAdults(users) {
+function filterAdults(arr) {
   let output = [];
-  users.forEach((user) => {
-    if (user.age >= 18) {
-      output.push(user.name);
+  arr.forEach((obj) => {
+    if (obj.age >= 18) {
+      output.push(obj.name);
     };
   });
   console.log(output);
