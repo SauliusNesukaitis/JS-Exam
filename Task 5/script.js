@@ -19,3 +19,27 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+
+function filterDogOwers(users) {
+  users.forEach((user) => {
+    if (user.hasDog === true) {
+      console.log(user.name)
+    }
+  })
+}
+
+filterDogOwers(users);
+
+
+function filterAdults(users) {
+  let output = [];
+  users.forEach((user) => {
+    if (user.age >= 18) {
+      output.push(user.name)
+    }
+  })
+  console.log(output);
+}
+
+filterAdults(users);
