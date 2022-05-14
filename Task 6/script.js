@@ -23,8 +23,8 @@ const users = [
 
 function getUserAverageAge(arr) {
   const userAgeArray = arr.map((user => user.age));
-  const sum = userAgeArray.reduce((partialSum, a) => partialSum + a, 0);
-  console.log(sum);
+  const userAverageAge = (userAgeArray.reduce((partialSum, a) => partialSum + a, 0)) / arr.length;
+  console.log(userAverageAge);
 }
 
 getUserAverageAge(users);
